@@ -222,9 +222,12 @@ export default function PurchaseBox() {
 
             <div className="flex justify-between items-center">
               <span className="text-neutral-400">Shipping</span>
-              <span className="rounded-md bg-green-500/10 border border-green-500/20 px-2 py-0.5 text-green-400 font-semibold">
-                FREE
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-neutral-500 line-through text-xs">$2.99</span>
+                <span className="rounded-md bg-green-500/10 border border-green-500/20 px-2 py-0.5 text-green-400 font-semibold">
+                  FREE
+                </span>
+              </div>
             </div>
           </div>
 
