@@ -1,0 +1,26 @@
+aws_region     = "us-east-1"
+instance_type  = "t3.small"
+volume_size    = 30
+domain         = "lumi-read.com"
+
+# Paste the contents of your public key (e.g. ~/.ssh/id_ed25519.pub)
+ssh_public_key = "ssh-ed25519 AAAA..."
+
+# Restrict SSH to your IP (recommended). Find yours: curl ifconfig.me
+ssh_cidr = "0.0.0.0/0"
+
+# Your repo (must be public, or set up a deploy key)
+github_repo = "https://github.com/your-user/lumilivro.git"
+
+# Secrets
+db_password            = "a-strong-password-here"
+stripe_secret_key      = "sk_live_..."
+stripe_publishable_key = "pk_live_..."
+stripe_webhook_secret  = "whsec_..."
+resend_api_key         = "re_..."
+email_from             = "LumiLivro <pedidos@lumuslivro.com.br>"
+admin_password         = "a-strong-admin-password"
+
+# Stripe Payment Links (use live links for production)
+stripe_link_basic   = "https://buy.stripe.com/..."
+stripe_link_premium = "https://buy.stripe.com/..."
